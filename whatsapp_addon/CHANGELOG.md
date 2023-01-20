@@ -1,3 +1,8 @@
+## 1.3.1
+
+ - Added the ability to run this WhatsApp code either as a standalone container (for use with HA docker) or as the addon for HA OS
+ - Fixed some spelling
+
 ## 1.3.0
 
 - Bug fixed.
@@ -9,7 +14,7 @@
 
 ## 1.2.2
 
-- Added the ability to always be online or offline. This could lead to not receiving notifications on other devices. (**Restard required**)
+- Added the ability to always be online or offline. This could lead to not receiving notifications on other devices. (**Restart required**)
 - Bug fixed.
 
 ## 1.2.1
@@ -23,7 +28,7 @@
 - **Changed radically command and events. Please refer to doc and developer tools for change your automations.**
 - **Performance boost! (Required re-authentication)**
 - Bug fixed on send location.
-- Bug fixed on send mulitple buttons.
+- Bug fixed on send multiple buttons.
 
 ## 1.1.2
 
@@ -50,7 +55,7 @@
 
 ## 1.0.2
 
-- Addedd message revoke event.
+- Added message revoke event.
 - Added buttons message type (view documentation) (may not work properly on some devices)
 - Added set status service (for sets the current user's status message)
 - Bug fixed.

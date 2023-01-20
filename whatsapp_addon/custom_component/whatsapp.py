@@ -1,7 +1,19 @@
-import requests
+import requests, os
 from url_normalize import url_normalize
 
-HOST = 'http://{{HOSTNAME}}:3000/'
+whatsapp_hostname = os.getenv('WHATSAPP_HOSTNAME')
+whatsapp_port = os.getenv('WHATSAPP_PORT')
+
+if whatsapp_hostname is None :
+	HOST = 'http://cswinney-lenovo:3000/'
+else :
+	if whatsapp_port is None :
+		HOST = f'http://{whatsapp_hostname}:3000/'
+	else :
+		HOST = f'http://{whatsapp_hostname}:{whatsapp_port}/'
+
+# HOST = 'http://cswinney-lenovo:3000/'
+print (HOST, "is the hostname used in the python script") 
 
 class Whatsapp:
     def send_message(self, data):
