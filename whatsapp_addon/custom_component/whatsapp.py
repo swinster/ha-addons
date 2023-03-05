@@ -8,9 +8,9 @@ if whatsapp_hostname is None :
 	HOST = 'http://cswinney-lenovo:3000/'
 else :
 	if whatsapp_port is None :
-		HOST = f'http://{whatsapp_hostname}:3000/'
+		HOST = f'{whatsapp_hostname}:3000/'
 	else :
-		HOST = f'http://{whatsapp_hostname}:{whatsapp_port}/'
+		HOST = f'{whatsapp_hostname}:{whatsapp_port}/'
 
 # HOST = 'http://cswinney-lenovo:3000/'
 print (HOST, "is the hostname used in the python script") 
